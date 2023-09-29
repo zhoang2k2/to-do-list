@@ -1,0 +1,94 @@
+#root {
+  margin: 0 auto;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.form-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.form-input,
+.submit-btn {
+  width: 250px;
+  height: 30px;
+  border-radius: 7px;
+}
+
+.form-input {
+  padding: 0 10px;
+  border: 1px solid #fff;
+
+}
+
+.submit-btn {
+  width: 270px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.submit-btn:hover {
+  background-color: rgba(255, 255, 255, .10);
+  font-weight: bolder;
+}
+
+.task-list-container {
+  width: 1000px;
+  min-height: 500px;
+  margin-top: 25px;
+  padding: 0 5px 20px 5px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, .25);
+}
+
+.task-list-container h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  width: 300px;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, .75);
+  position: relative;
+}
+
+.delete-btn {
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  padding: 5px 15px;
+  border: 1px #fff solid;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, .1);
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.delete-btn:hover {
+  font-weight: bold;
+  color: rgb(255, 36, 84);
+}
